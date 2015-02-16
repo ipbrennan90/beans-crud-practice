@@ -1,0 +1,11 @@
+<%= link_to "NEW BEAN!!!", new_bean_path %>
+<%= @beans.each do |b| %>
+
+<%= link_to b.type, bean_path(b) %>
+</br>
+<%= b.date_planted%>
+</br>
+<%= b.date_harvested %>
+</br>
+<%= link_to "Edit", edit_bean_path(@bean) %> | <%= link_to "Destroy BEAN!!", bean_path(@bean), method: :delete %>
+<% end %>

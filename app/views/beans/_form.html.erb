@@ -1,0 +1,16 @@
+<h1> NEW BEAN! </h1>
+
+<%= form_for @bean do |b| %>
+
+<%= b.label :species %>
+<%= b.text_field :species %>
+
+<%= b.label :date_planted %>
+<%= b.date_field :date_planted %>
+
+<%= b.label :date_harvested %>
+<%= b.date_field :date_harvested %>
+
+<%= b.submit %>
+
+<% end %>

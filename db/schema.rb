@@ -11,13 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150216061032) do
+ActiveRecord::Schema.define(version: 20150216172042) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "beans", force: :cascade do |t|
-    t.string   "type"
+    t.string   "species"
     t.datetime "date_planted"
     t.datetime "date_harvested"
     t.datetime "created_at",     null: false

@@ -1,0 +1,9 @@
+<h1> THE BEAN YOU'VE SELECTED: </h1>
+
+<%= @bean.type %>
+</br>
+<%= @bean.date_planted %>
+</br>
+<%= @bean.date_harvested %>
+
+<%= link_to "Edit", edit_bean_path(@bean) %> | <%= link_to "Cancel", beans_path %>
